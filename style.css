@@ -1,0 +1,61 @@
+html {
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkslateblue;
+}
+
+.boxContainer {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    margin: 10px;
+    background-color: rgb(213, 244, 253);
+    box-shadow: 1px 1px 7px 10px grey;
+
+}
+
+.gridBox {
+    border: 0.5px solid grey;
+    background-color: inherit;
+}
+
+.gridBox:hover {
+    background-color: aqua;
+}
+
+
+.playerDiv {
+    display: inline-grid;
+    width: 600px;
+    grid-template-columns: repeat(2, min(150px));
+    grid-template-rows: repeat(1, 60px);
+    justify-content: space-around;
+    margin: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    font-size: medium;
+}
+
+input {
+    border: 1px solid rgb(184, 173, 250);
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: rgb(17, 7, 85);
+}
+
+input:hover {
+    border: 2px solid rgb(170, 214, 111);
+}
+
+input:focus {
+    background-color: aqua;
+    color: black;
+}
